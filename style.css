@@ -1,0 +1,69 @@
+*{
+     margin: 0;
+    padding: 0; 
+     box-sizing: border-box; 
+}
+.App{
+    width: 100vw;
+    height: 100vh;
+}
+.img-container{
+    position: relative;
+
+    width: 80%;
+    margin: auto auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    padding: 2rem;
+    z-index: 1000;
+
+}
+.img-wrapper{
+    width: 80%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 1rem;
+    gap:2rem;
+    overflow-x:hidden;
+    transition: 1s ease-in-out;
+    background-color: aliceblue;
+    margin: 2rem;
+}
+.img-card{
+    min-width:31%;
+    transition: 1s ease-in-out;
+    height: 100%;
+    border-radius: 10px;
+   
+}
+.img-card img{
+    width:100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.prev-btn{
+    position: absolute;
+    left: 5%;
+   
+}
+.next-btn{
+    position:absolute;
+    right:5%;
+    z-index: 1111;
+}
+.prev-btn span,.next-btn span{
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(22, 119, 50);
+    cursor: pointer;
+}
+.prev-btn button,.next-btn button{
+    /* padding:10px 20px; */
+    font-size: 2rem;
+    background-color: rgb(211, 201, 201);
+}
+
